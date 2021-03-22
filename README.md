@@ -1,7 +1,7 @@
 % #Signals-and-Systems
 %Design of Signals and Systems code for first year university students. The code is done in matlab.
 %
-
+%
 %Problem 1A
 %Let us plot a discrete time sinusoid 𝑥[n] = sin[Ωo * n]. 
 % Ωo = - pi/4.
