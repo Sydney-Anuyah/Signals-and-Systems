@@ -34,6 +34,15 @@ stem (n, xn)
 %stem(X,Y) plots the data sequence Y at the values specified in X
 %Discrete sequence or "stem" plot. stem(Y) plots the data sequence Y as stems from the x axis terminated with circles for the data value. 
 
+set(gca,'FontName','times','FontSize',16);
+plot(t, xn_ct,'k--', 'LineWidth', 3);
+stem(n, xn, 'b', 'LineWidth', 4);
+xlabel('Time \itn');
+ylabel('\itx\rm[\itn\rm] = sin(\Omega_{0}\itn\rm)');
+title('Task 1, Part (a) with discrete and continuous n, \Omega_{0} = -
+\pi/4')
+grid on;
+
 
 xlabel('Time \itn'); 
 %labels the x axis
