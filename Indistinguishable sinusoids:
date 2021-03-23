@@ -1,0 +1,36 @@
+%The variables have been assigned in mainfile.
+
+%Ω0 = -0.25 * π
+
+n = 0:10;
+
+Omega0 = -pi/4;
+xn = sin(Omega0 * n);
+
+
+t = 0:.01:10;
+xn_ct = sin(Omega0 * t);
+
+%y = sin (Ω1*t)
+
+%Ω1 = Ω0 + 2π
+
+
+Omega1 = Omega0 + 2*pi;
+yn = sin(Omega1 * n);
+yn_ct = sin(Omega1 * t);
+
+figure; hold on;
+set(gca,'FontName','times','FontSize',16);
+plot(t, xn_ct,'r--', 'LineWidth', 2.5, 'DisplayName', '\Omega = -
+\pi/4');
+plot(t, yn_ct,'k--', 'LineWidth', 2.5, 'DisplayName', '\Omega =
+7\pi/4');
+stem(n, xn, 'r', 'LineWidth', 4, 'DisplayName', '\Omega = -\pi/4');
+stem(n, yn, 'b', 'LineWidth', 4, 'DisplayName', '\Omega = 7\pi/4');
+xlabel('Time \itn');
+
+ylabel('\itx\rm(\itt\rm) = sin(\Omega\itn\rm)');
+title('Task 1, Part (b) with discrete and continuous n')
+legend('show');
+grid on;
